@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+nav[data-bs-theme=light] {
+    background-color: #fff;
+}
+nav[data-bs-theme=light] .nav-link {
+    color: #000000A6;
+}
+nav[data-bs-theme=light].subNav {
+    background-color: #ada8a8;
+}
+nav[data-bs-theme=light].subNav .nav-link {
+    color: #A020F0;
+}
+
+nav[data-bs-theme=dark] {
+    background-color: #5a5aeb;
+}
+nav[data-bs-theme=dark] .nav-link {
+    color: #ff0000;
+}
+nav[data-bs-theme=dark].subNav {
+    background-color: #fdfd09;
+}
+nav[data-bs-theme=dark].subNav .nav-link {
+    color: #31df31;
+}
