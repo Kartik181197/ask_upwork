@@ -9,7 +9,6 @@ export class SanghaComponent implements OnInit {
   isUnchanged: string | null = "light";
 
   ngOnInit() : void {
-    console.log(document.getElementsByTagName("html")[0].hasAttribute("data-bs-theme"))
     if(document.getElementsByTagName("html")[0].hasAttribute("data-bs-theme")) {
       this.isUnchanged = document.getElementsByTagName("html")[0].getAttribute("data-bs-theme");
     }

@@ -13,10 +13,10 @@ export class ColorToggleComponent {
     const theme = this.isDarkMode ? 'dark' : 'light';
     document.documentElement.setAttribute('data-bs-theme', theme);
 
-    let element = document.getElementsByTagName("nav");
-    if(element.length > 0){
-      for(var i = 0; i < element.length; i++) {
-        element[i].setAttribute("data-bs-theme", theme);
+    let themeAttributeElements = document.querySelectorAll("[data-bs-theme]");
+    if(themeAttributeElements.length > 0){
+      for(var i = 0; i < themeAttributeElements.length; i++) {
+        themeAttributeElements[i].setAttribute("data-bs-theme", theme);
       }
     }
   }
