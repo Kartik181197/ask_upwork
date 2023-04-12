@@ -10,7 +10,7 @@ export class ColorToggleComponent {
 
   toggleColorMode() {
     this.isDarkMode = !this.isDarkMode;
-    const theme = this.isDarkMode ? 'dark' : '';
+    const theme = this.isDarkMode ? 'dark' : 'light';
     document.documentElement.setAttribute('data-bs-theme', theme);
 
     let element = document.getElementsByTagName("nav");
